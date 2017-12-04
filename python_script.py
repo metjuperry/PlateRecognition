@@ -7,10 +7,10 @@ import mysql.connector
 webpage = "https://spz.penize.cz/"
 
 config = {
-    'user': 'root',
-    'password': 'root',
-    'unix_socket': '/Applications/MAMP/tmp/mysql/mysql.sock',
-    'database': 'ScannedRegistration',
+    'user': 'Username',
+    'password': 'Password',
+    'unix_socket': 'Socket',
+    'database': 'Databse',
     'raise_on_warnings': True,
 }
 
@@ -30,7 +30,7 @@ def make_information_list(information_table):
 
 
 def main(webpage_to_scrape, database_config):
-    alpr = Alpr("eu", "/config/alprd.conf.defaults", "/Users/matejsamler/Downloads/openalpr-master/runtime_data")
+    alpr = Alpr("eu", "/config/alprd.conf.defaults", "runtime_data")
     if not alpr.is_loaded():
         print "Error loading OpenALPR"
         return -1
