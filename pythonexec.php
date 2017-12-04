@@ -1,8 +1,8 @@
 <?php
 
-$user = 'root';
-$password = 'root';
-$db = 'ScannedRegistration';
+$user = 'user';
+$password = 'password';
+$db = 'Database';
 $host = 'localhost';
 $port = 8889;
 
@@ -54,7 +54,7 @@ if ($uploadOk == 0) {
 }
 }
 $target_file = "/Applications/MAMP/htdocs/" . $target_file;
-$command = "/Library/Frameworks/Python.framework/Versions/2.7/bin/python /Applications/MAMP/htdocs/python_script.py";
+$command = "python python_script.py";
 $output = shell_exec($command ." ". $target_file);
 
 
