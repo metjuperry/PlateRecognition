@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>KOZNA</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="tools.css">
+</head>   
+<body>
+    
+<header>
+    <a href=index.html><img src=header.png alt=”header”></a>
+</header>
+
+<nav>
+    <ul>
+      <li><a href="index.html">Front Page</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+</nav>
+
+<article>
+    <h2>Welcome to KOZNA</h2>
+    <h3>Open source based application for licence plate recognition</h3>
+    <p>Please upload image of a car with visible licence plate for KOZNA to process.</p>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+    <label class="button">Upload &nbsp; image<input type="file" name="fileToUpload" id="fileToUpload" onchange="javascript:this.form.submit();"></label>
+    </form>
+</article>
+<footer>
+    <p>KOZNA TEAM, 2017</p>
+</footer>
+</body>
+</html>
